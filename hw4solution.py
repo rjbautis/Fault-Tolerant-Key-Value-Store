@@ -1,3 +1,11 @@
+'''
+    File name: hw4solution.py
+    Authors: Ryan Bautista & Brandon Samudio
+    Date created: 3/16/2018
+    Date last modified: 3/26/2018
+    Python Version: 3.0
+'''
+
 import os
 import requests
 import hashlib

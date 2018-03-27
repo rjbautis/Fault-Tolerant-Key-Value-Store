@@ -1,7 +1,7 @@
 # Fault Tolerant and Scalable Key-Value Store
-A Fault Tolerant and Scalable Key-Value Store, written all in Python 3.0, as a final project for the Distributed Systems undergraduate course at UC Santa Cruz. Simulates node replication across multiple partitions, utilizes consistent hashing for key distribution, and runs background services to ensure fault tolerance in the face of network disconnections. 
+A [Fault Tolerant and Scalable Key-Value Store](hw4solution.py), written all in Python 3.0, as a final project for the Distributed Systems undergraduate course at UC Santa Cruz. Simulates node replication across multiple partitions, utilizes consistent hashing for key distribution, and runs background services to ensure fault tolerance in the face of network disconnections. 
 
-Built with Flask and tested using Docker. 
+Built with Flask and tested using Docker.
 
 Disclaimer: HW4 spec file and unit test written by TA Umang Sardesai (Winter Quarter 2018), not by me.
 
