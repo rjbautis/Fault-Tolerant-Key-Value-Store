@@ -28,7 +28,7 @@ Now create a network in docker:
 docker network create --subnet=10.0.0.0/16 mynet
 ```
 
-We are ready to begin instantiating our docker containers. For example, run the following lines to create a KVS with 4 nodes and 2 partitions (taken from [HW4_Spec.md](HW4_Spec.md)):
+We are ready to begin instantiating our docker containers. For example, run the following lines to create a KVS with 4 nodes and 2 partitions (taken from [HW4_Spec.md](spec/HW4_Spec.md)):
 
 ```
 docker run -p 8081:8080 --ip=10.0.0.21 --net=mynet -e K=2 -e VIEW="10.0.0.21:8080,10.0.0.22:8080,10.0.0.23:8080,10.0.0.24:8080" -e ip_port="10.0.0.21:8080" hw4
@@ -52,7 +52,7 @@ curl -X PUT localhost:8081/kvs -d "key=foo&value=bar&causal_payload="
 ```
 Please note that every new key inserted must be inserted with an empty *causal_payload*, but from that point on the user must remember the returned value for future requests (GET requests will not increment *causal_payload*, but PUT requests will)
 
-**To run the provided unit test, do the following:**
+**To run the provided unit test, run the following:**
 ```
 python test_HW4.py
 ```
